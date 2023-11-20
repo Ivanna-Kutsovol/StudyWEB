@@ -1,49 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
+    <link rel="stylesheet" href="lab.css">
+    <title>Form registration</title>
 </head>
+
 <body>
- <form action="" method="">
-    <label for="name">Name</label>
-    <input required id="name" type="text" name ="name">
 
-    <br>
-    <br>
+    <form action="" class="form">
 
-    <label for="last name">Last name</label>
-    <input id="last name" type="text" name ="last name">
+        <h1 class="form__title">Registration</h1>
+        <div class="form__group">
+        <label for="name">Name</label>
+        <input required id="name" type="text" name="name">
+        </div>
 
-    <br>
-    <br>
+        <br>
+        <br>
 
-    <label for="email">Email</label>
-    <input required id="email" type="email" name ="email">
+        <div class="form__group">
+        <label for="last name">Last name</label>
+        <input id="last name" type="text" name="last name">
+        </div>
 
-    <br>
-    <br>
+        <br>
+        <br>
 
-    <label for="password">Password</label>
-    <input required id="password" type="password" name ="password">
+        <div class="form__group">
+        <label for="email">Email</label>
+        <input required id="email" type="email" name="email">
+        </div>
 
-    <br>
-    <br>
+        <br>
+        <br>
 
-    <label for="password">Enter the password again</label>
-    <input required id="password" type="password" name ="password">
+        <div class="form__group">
+        <label for="password">Password</label>
+        <input required id="password" type="password" name="password">
+        </div>
 
-    <br>
-    <br>
+        <br>
+        <br>
 
-    <a href = "/exit">log in to the account</a>
+        <div class="form__group">
+        <label for="password">Enter the password again</label>
+        <input required id="password" type="password" name="password">
+        </div>
 
-    <br>
-    <br>
+        <br>
+        <br>
 
-    <input type="submit" value="register">
- </form>
+        <a href="/exit">Log in to the account</a>
+
+        <br>
+        <br>
+
+        <input type="submit" value="register">
+    </form>
 
 </body>
+
 </html>

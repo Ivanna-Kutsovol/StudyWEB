@@ -1,0 +1,104 @@
+ body { /*розташуємо форму по центрі */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form { /*робимо межі форми*/
+    width: 300px; /*ширина*/
+    padding: 32px;
+    border-radius: 10px; /*закруглені краї*/
+    box-shadow: 0 4px 16px #ccc; /*тіні*/
+    font-family: sans-serif; /*шрифт без засічок*/
+    letter-spacing: 1px; /*відстань між літерами*/
+}
+
+.form__input,
+.form__button{ /*додаємо стилі для полів ввода та кнопки*/
+    font-family: sans-serif; /*шрифт без засічок*/
+    letter-spacing: 1px; /*відстань між літерами*/ 
+    font-size: 16px;
+}
+
+ .form__title {  /*оформляємо заголовок*/
+    text-align: center; /*центр по горизонатлі*/
+    margin: 0 0 32px 0;
+    font-weight: normal; /*приберемо жирність*/
+}
+
+.form__group { /*оформляємо группи*/
+    position: relative; /*відносне позиціювання*/
+    margin-bottom: 32px;
+}
+
+.form__label { /*оформляємо підсказки*/
+    position:absolute; /*абсолютне позиціювання*/
+    top: 0;
+    z-index: -1; /*підсказки будуть знаходитися під полем ввода*/
+    color:darkred;
+    transition: 0.3s;
+}
+
+.form__input{ /*оформляємо поля ввода*/
+    width: 100%; /*ширина*/
+    padding: 0 0 10px 0;
+    border: none;
+    border-bottom:1px solid #e0e0e0 ;
+    background-color: transparent; /*колір фону*/
+    outline: none;
+    transition: 0.3s; /*час переходу*/
+}
+
+.form__input:focus{ /*нижня границя поля ввода*/
+    border-bottom: 1px solid #1a73a8;
+}
+
+.form__a { /*оформляємо кнопку*/
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #ccc;
+    background-color: #0071f0;
+    outline: none;
+    cursor: pointer;
+    transition: 0,3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
