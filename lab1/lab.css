@@ -10,7 +10,7 @@
     border-radius: 10px; /*закруглені краї*/
     box-shadow: 0 4px 16px #ccc; /*тіні*/
     font-family: sans-serif; /*шрифт без засічок*/
-    letter-spacing: 1px; /*відстань між літерами*/
+    letter-spacing: 1px;
 }
 
 .form__input,
@@ -35,7 +35,7 @@
     position:absolute; /*абсолютне позиціювання*/
     top: 0;
     z-index: -1; /*підсказки будуть знаходитися під полем ввода*/
-    color:darkred;
+    color: #9e9e9e;
     transition: 0.3s;
 }
 
@@ -43,7 +43,7 @@
     width: 100%; /*ширина*/
     padding: 0 0 10px 0;
     border: none;
-    border-bottom:1px solid #e0e0e0 ;
+    border-bottom:1px solid #ccc ;
     background-color: transparent; /*колір фону*/
     outline: none;
     transition: 0.3s; /*час переходу*/
@@ -53,16 +53,48 @@
     border-bottom: 1px solid #1a73a8;
 }
 
-.form__a { /*оформляємо кнопку*/
+.form__button { /*оформляємо кнопку*/
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     color: #ccc;
     background-color: #0071f0;
     outline: none;
     cursor: pointer;
-    transition: 0,3s;
+    transition: 0.3s;
 }
+
+.form__button:focus, /*фокус кнопки*/
+.form__button:hover {
+    background-color: rgb(4, 0, 240); /*змінюємо колір коли кнопка в фокусі*/
+}
+
+.form__login-button{
+    width: 100%;
+    padding: 5x 5px ;
+    border: 2px;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: #130d0d;
+    background-color: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form__login-button:focus, /*фокус кнопки*/
+.form__login-button:hover{
+    background-color:#1a73a8; /*змінюємо колір коли кнопка в фокусі*/
+    color: #e0e0e0;
+}
+
+.form__input:focus ~ .form__label /*оформлюємо полі ввода*/
+.form__input:not(:placeholder-shown) ~ .form__label {
+    top: -18px;
+    font-size: 12px; /*розмір шрифта*/
+    color: #e0e0e0; 
+}
+
 
 
 

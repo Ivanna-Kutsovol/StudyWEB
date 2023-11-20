@@ -13,52 +13,35 @@
     <form action="" class="form">
 
         <h1 class="form__title">Registration</h1>
-        <div class="form__group">
-        <label for="name">Name</label>
-        <input required id="name" type="text" name="name">
-        </div>
-
-        <br>
-        <br>
 
         <div class="form__group">
-        <label for="last name">Last name</label>
-        <input id="last name" type="text" name="last name">
+        <label class="form__label" for="name">Name</label>
+        <input class="form__input" placeholder="" id="name" type="text" name="name">
         </div>
-
-        <br>
-        <br>
 
         <div class="form__group">
-        <label for="email">Email</label>
-        <input required id="email" type="email" name="email">
+        <label class="form__label" for="last name">Last name</label>
+        <input class="form__input" placeholder="" id="last name" type="text" name="last name">
         </div>
-
-        <br>
-        <br>
 
         <div class="form__group">
-        <label for="password">Password</label>
-        <input required id="password" type="password" name="password">
+        <label class="form__label" for="email">Email</label>
+        <input class="form__input" placeholder="" required id="email" type="email" name="email">
         </div>
-
-        <br>
-        <br>
 
         <div class="form__group">
-        <label for="password">Enter the password again</label>
-        <input required id="password" type="password" name="password">
+        <label class="form__label" for="password">Password</label>
+        <input class="form__input" placeholder="" required id="password" type="password" name="password">
         </div>
 
-        <br>
-        <br>
+        <div class="form__group">
+        <label class="form__label" for="password">Enter the password again</label>
+        <input class="form__input" placeholder="" required id="password" type="password" name="password">
+        </div>
 
-        <a href="/exit">Log in to the account</a>
-
-        <br>
-        <br>
-
-        <input type="submit" value="register">
+        <button class="form__button" type="submit" href="/account" >Create an account</button>
+        
+        <button class='form__login-button' type="button" href="/account">log in to a valid account</button>
     </form>
 
 </body>
