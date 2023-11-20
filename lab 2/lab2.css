@@ -1,0 +1,62 @@
+ul li:first-child {
+    font-weight: bolt;
+}
+
+a:last-child {
+    color: red;
+}
+
+input:disabled {
+    background-color: gray;
+}
+
+div > p {
+    font-weight: bold;
+}
+
+[href^= "https"] {
+    color: green;
+}
+
+input[type=text] {
+    border: 1px solid blue;
+}
+
+:last-child {
+    font-size: 24px;
+}
+
+div p {
+    font-size: 16px;
+}
+
+input:checked {
+    background-color: lightblue;
+}
+
+li > a {
+    text-decoration: underline;
+}
+
+li:nth-child(even) {
+    font-weight: bolt;
+}
+
+input[type=text] ~ :disabled {
+    background-color: gray;
+}
+
+:first-child > p {
+    font-size: 24px;
+}
+
+.special + li {
+    text-decoration: line-through;
+}
+
+p::first-letter {
+    font-size: 36px;
+}
+a::after {
+    font-size: 36px;
+}
