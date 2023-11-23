@@ -1,0 +1,139 @@
+*,
+*::before,
+* ::after{
+    box-sizing: border-box;
+}
+.container{
+    font-family: sans-serif; 
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    border: 2px solid #4e4e4e;
+    width: 100vw;
+    margin-bottom: 10px;
+    align-items: flex-start;
+}
+
+.items1{
+    display: inline;
+    align-self: flex-end;
+    list-style-type: none;
+    margin: 5px;
+}
+
+.items1 li{
+    display: inline;
+}
+
+.items1 li a{
+    display: inline;
+    text-decoration: none;
+    color: black;
+    padding:10px;
+}
+
+.container2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: stretch;
+}
+
+.box-button{
+    flex:1;
+    display: inline-block;
+    flex-flow: row nowrap;
+    align-self: stretch;
+    justify-content: space-evenly;
+    padding: 4px 5px 5px 4px;
+    border: none;
+    border-radius: 40px;
+    color: #ccc;
+    background-color: rgb(101, 102, 104);
+    margin: 5px;
+    font-size: 10px;
+}
+
+.container3{
+    /* height: 100vh; */
+    max-width: min-content; 
+    font-family: sans-serif; 
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    border: 2px solid #4e4e4e;
+    margin-right: 10px;
+    padding: 10px;
+    margin-top: 10px;
+
+}
+
+.items2{
+    display: block;
+    align-self: flex-start;
+    list-style-type: none;
+    padding: 0;
+}
+
+.items2 li{
+    display: block;
+    margin: 0;
+}
+
+.items2 li a{
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+.items2 i {
+    margin-right: 10px;
+}
+
+.items3{   
+    display: block;
+    align-self: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.items3 li{
+    display: block;
+    margin: 0;
+}
+
+.items3 li a{
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+.items3 i {
+    margin-right: 10px;
+}
+
+.items4{   
+    display: block;
+    align-self: flex-end;
+    list-style-type: none;
+    padding: 0;
+}
+
+.items4 li{
+    display: block;
+    margin: 0;
+}
+
+.items4 li a{
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+.items2,
+.items3,
+.items4{
+    border-bottom: 1px solid #3b2525;
+}
