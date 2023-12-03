@@ -1,0 +1,146 @@
+body{
+    display: grid;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: #585858;
+    border: 5px solid #706b6ba8;
+    border-bottom: 15px solid #535353a8;
+    margin: 0;
+    grid-template-columns: minmax(150px, 220px) minmax(160px, 220px) 1fr;
+    grid-template-areas: 
+    "header header header"
+    "site main main "; 
+}
+
+.container{
+    display: grid;
+    grid-area: header;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:repeat(2,25px);
+    justify-content: end;
+    width: 100%;
+    grid-auto-flow: dense;
+    border-bottom:1px solid #585858;
+}
+
+.title_plan{
+    font-size: 40px;
+    grid-column-start: span 1;
+    font-weight: bolder;
+}
+
+.item_group{
+    display: grid;
+    justify-self: end;
+    align-self: end;
+    grid-auto-flow:column;
+}
+
+.item_group:nth-child(5) {
+    grid-column: 4/-1;
+}
+
+.container_2{
+    display: grid;
+    grid-area: site; 
+    grid-auto-flow: dense;
+}
+
+.title_todo{
+    justify-self: end;
+    font-weight: bolder;
+}
+
+.container_3{
+    display: grid;
+    grid-area: main; 
+    grid-auto-flow: dense;
+    justify-content: stretch;
+    grid-template-columns: repeat(3, 60vh);
+    grid-template-rows: repeat(2,20vw);
+    border:1px solid #585858; 
+    gap: 0;
+    
+}
+
+.week_group{
+    display: grid;
+    justify-self: start;
+    align-self:center;
+    grid-template-columns: repeat(2,170px);
+    grid-template-rows: repeat(3, 90px) ;
+    box-sizing: border-box;
+    border: 2px solid #585858;
+    gap: 0;
+}
+
+.week_group_Saturday{
+    display: grid;
+    height: 22vh;
+    grid-column: -2/ -2;
+    grid-row: -2/ -2; 
+    box-sizing: border-box;
+    border: 2px solid #585858;
+    gap:0;
+}
+
+.week_group_Sunday {
+    display: grid;
+    grid-column: -2/ -2; 
+    grid-row: -2/ -1; 
+    height: 22vh;
+    align-self: end;
+    box-sizing: border-box;
+    border: 2px solid #585858;
+    gap: 0;
+}
+
+.week_group label {
+    display: grid;
+    justify-self: center;
+    grid-column: 1;
+    margin: 0;
+}
+
+.week_group input[type="checkbox"]{
+    display: grid;
+    width: 20px;
+    height: 20px;
+    grid-column: 3; 
+}
+
+.week_group textarea{
+    display: grid;
+    justify-self: stretch;
+    grid-column:span 4;
+    grid-row: span 3;
+}
+
+.week_group_Saturday input[type="checkbox"]{
+    display: grid;
+    width: 20px;
+    height: 20px;
+    grid-column: 6; 
+    justify-self: end;
+}
+
+.week_group_Sunday input[type="checkbox"]{
+    display: grid;
+    width: 20px;
+    height: 20px;
+    grid-column: 6; 
+    justify-self: end;
+}
+
+.week_group_Saturday textarea{
+    display: grid;
+    justify-self: stretch;
+    grid-column:span 6;
+    grid-row: span 2;
+}
+
+.week_group_Sunday textarea{
+    display: grid;
+    justify-self: stretch;
+    grid-column:span 6;
+    grid-row: span 2;
+}
